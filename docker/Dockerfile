@@ -5,7 +5,7 @@ RUN groupadd -g 10001 appgroup && \
     useradd -m -u 10001 -g appgroup appuser
 
 # Switch to the new user
-USER appuser
+USER 10001
 
 # Set the working directory
 WORKDIR /app
